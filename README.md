@@ -11,6 +11,14 @@ MVP funcional de um marketplace estilo Mercado Livre: catálogo com busca, pági
 - **Fuse.js** — busca fuzzy client-side (fallback enquanto não há Meilisearch/Elasticsearch)
 - **Vitest** — testes unitários da lógica de preço/carrinho
 
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Juliojuliano/marketplace-mvp)
+
+Projeto zero-config: sem variáveis de ambiente obrigatórias, sem serviços externos. Clique no botão acima (ou importe o repositório em vercel.com/new) para publicar.
+
+> Nota: a idempotência do checkout usa um `Map` em memória (ver "O que fica para depois"), então não sobrevive a cold starts/múltiplas instâncias em produção serverless — suficiente para demo, não para produção real.
+
 ## Rodando localmente
 
 ```bash
